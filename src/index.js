@@ -14,6 +14,7 @@ class ContentType{
         }
     }
 }
+
 function contactBodyContent(){
     let parentSeletor = document.getElementById('Body');
     parentSeletor.innerHTML='';
@@ -21,6 +22,7 @@ function contactBodyContent(){
     parentSeletor.appendChild(parcel);
     parcel.textContent='+91xxxxxxxxxx'
 }
+
 function menuBodyContent(){
     let parentSeletor = document.getElementById('Body');
     parentSeletor.innerHTML='';
@@ -28,6 +30,7 @@ function menuBodyContent(){
     parentSeletor.appendChild(restaurantContent);
     restaurantContent.textContent='Paneer Pasta';
 }
+
 function homeBodyContent(){
     let parentSeletor = document.getElementById('Body');
     parentSeletor.innerHTML='';
@@ -88,7 +91,6 @@ function creatingBaseTemplate(){
     contentDiv.id='Body';
     contentDiv.className='Body'
     headerContent()
-    //user.checkToDisplay
 }
 let user = new ContentType()
 creatingBaseTemplate()
