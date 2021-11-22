@@ -14,19 +14,43 @@ class ContentType{
         }
     }
 }
-
+function contactBodyContent(){
+    let parentSeletor = document.getElementById('Body');
+    parentSeletor.innerHTML='';
+    let parcel=document.createElement('p');
+    parentSeletor.appendChild(parcel);
+    parcel.textContent='+91xxxxxxxxxx'
+}
+function menuBodyContent(){
+    let parentSeletor = document.getElementById('Body');
+    parentSeletor.innerHTML='';
+    let restaurantContent=document.createElement('p');
+    parentSeletor.appendChild(restaurantContent);
+    restaurantContent.textContent='Paneer Pasta';
+}
 function homeBodyContent(){
     let parentSeletor = document.getElementById('Body');
     parentSeletor.innerHTML='';
     let nameOfRestaurant=document.createElement('h1');
     parentSeletor.appendChild(nameOfRestaurant);
-    nameOfRestaurant.textContent='Saravana Bhavan';
+    nameOfRestaurant.textContent='Paneer Station';
 }
 
 function AMC(parent,Arr){
-    console.log(Arr)
+    console.log(Arr);
     for (let i=0;i<Arr.length;i++){
         parent.appendChild(Arr[i])
+    }
+}
+
+function ClickToChangeContent(Arr){
+    for(let i=0;i<Arr.length;i++){
+        console.log('started')
+        Arr[i].addEventListener('click',()=>{
+            user.number=i;
+            user.checkToDisplay()
+            console.log('done')
+        });
     }
 }
 
@@ -36,6 +60,10 @@ function subsection(){
     let Menu = document.createElement('li');
     let Contact = document.createElement('li');
     AMC(parentSelector,[Home,Menu,Contact]);
+    Home.textContent="Home";
+    Menu.textContent="Menu";
+    Contact.textContent="Contact"
+    ClickToChangeContent([Home,Menu,Contact])
 }
 
 function headerContent(){
@@ -45,8 +73,9 @@ function headerContent(){
     AMC(parentSelector,[RestaurantName,ListOfSub])
     RestaurantName.id='RestName';
     ListOfSub.id='Subsections';
-    subsection()
-
+    subsection();
+    RestaurantName.textContent='Pa/Sta';
+    user.checkToDisplay();
 }
 
 function creatingBaseTemplate(){
@@ -55,9 +84,11 @@ function creatingBaseTemplate(){
     let contentDiv = document.createElement('div');
     AMC(bodyDiv,[headerDiv,contentDiv])
     headerDiv.id='Header';
+    headerDiv.className='Header';
     contentDiv.id='Body';
+    contentDiv.className='Body'
     headerContent()
     //user.checkToDisplay
 }
-let user = new ContentType
+let user = new ContentType()
 creatingBaseTemplate()
