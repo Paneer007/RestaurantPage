@@ -166,7 +166,67 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _FoodPics_ChickenBiriyani_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FoodPics/ChickenBiriyani.jpg */ \"./src/FoodPics/ChickenBiriyani.jpg\");\n/* harmony import */ var _FoodPics_ButterChicken_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FoodPics/ButterChicken.jpg */ \"./src/FoodPics/ButterChicken.jpg\");\n/* harmony import */ var _FoodPics_NaaNBasket_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FoodPics/NaaNBasket.jpg */ \"./src/FoodPics/NaaNBasket.jpg\");\n/* harmony import */ var _FoodPics_Chai_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./FoodPics/Chai.jpg */ \"./src/FoodPics/Chai.jpg\");\n/* harmony import */ var _FoodPics_TandooriPrawns_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./FoodPics/TandooriPrawns.jpg */ \"./src/FoodPics/TandooriPrawns.jpg\");\n/* harmony import */ var _FoodPics_KalaJamun_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./FoodPics/KalaJamun.jpg */ \"./src/FoodPics/KalaJamun.jpg\");\n/* harmony import */ var _commonFunctions_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./commonFunctions.js */ \"./src/commonFunctions.js\");\n\n\n\n\n\n\n\nfunction ShowMenuItem(Food,Image,Description){\n    let parentSeletor = document.getElementById('Body');\n    let FoodCard= document.createElement('div');\n    parentSeletor.appendChild(FoodCard);\n    FoodCard.id=`${Food}`;\n    FoodCard.className='FoodCard'\n    let foodName= document.createElement('h2');\n    let foodPic=document.createElement('img');\n    let foodDesc=document.createElement('p');\n    (0,_commonFunctions_js__WEBPACK_IMPORTED_MODULE_6__[\"default\"])(FoodCard,[foodPic,foodName,foodDesc]);\n    foodName.innerText=`${Food}`;\n    foodPic.src=`${Image}`;\n    foodDesc.textContent=`${Description}`;\n}\nfunction menuBodyContent(){\n    let parentSeletor = document.getElementById('Body');\n    parentSeletor.innerHTML='';\n    let restaurantContent=document.createElement('p');\n    parentSeletor.appendChild(restaurantContent);\n    restaurantContent.textContent='Paneer Pasta';\n    ShowMenuItem('Biriyani',_FoodPics_ChickenBiriyani_jpg__WEBPACK_IMPORTED_MODULE_0__,'Rich Indian Rice');\n    ShowMenuItem('ButterChicken',_FoodPics_ButterChicken_jpg__WEBPACK_IMPORTED_MODULE_1__,'Rich Indian Chicken gravy with gracious ammount of Butter');\n    ShowMenuItem('Bread Basket',_FoodPics_NaaNBasket_jpg__WEBPACK_IMPORTED_MODULE_2__,'An Array of indian Bread');\n    ShowMenuItem('Chai',_FoodPics_Chai_jpg__WEBPACK_IMPORTED_MODULE_3__,'India\\'s Favorite drink');\n    ShowMenuItem('Tandoori Prawns',_FoodPics_TandooriPrawns_jpg__WEBPACK_IMPORTED_MODULE_4__,'Grilled PRawns')\n\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuBodyContent);\n\n//# sourceURL=webpack://restaurantpage/./src/menuBodyContent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _home_sanjai_SanjaiCoding_Odin_Project_HTML_Projects_restaurantPage_dist_FoodPics_ChickenBiriyani_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dist/FoodPics/ChickenBiriyani.jpg */ \"./dist/FoodPics/ChickenBiriyani.jpg\");\n/* harmony import */ var _home_sanjai_SanjaiCoding_Odin_Project_HTML_Projects_restaurantPage_dist_FoodPics_ButterChicken_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dist/FoodPics/ButterChicken.jpg */ \"./dist/FoodPics/ButterChicken.jpg\");\n/* harmony import */ var _home_sanjai_SanjaiCoding_Odin_Project_HTML_Projects_restaurantPage_dist_FoodPics_NaaNBasket_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dist/FoodPics/NaaNBasket.jpg */ \"./dist/FoodPics/NaaNBasket.jpg\");\n/* harmony import */ var _home_sanjai_SanjaiCoding_Odin_Project_HTML_Projects_restaurantPage_dist_FoodPics_Chai_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dist/FoodPics/Chai.jpg */ \"./dist/FoodPics/Chai.jpg\");\n/* harmony import */ var _home_sanjai_SanjaiCoding_Odin_Project_HTML_Projects_restaurantPage_dist_FoodPics_TandooriPrawns_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dist/FoodPics/TandooriPrawns.jpg */ \"./dist/FoodPics/TandooriPrawns.jpg\");\n/* harmony import */ var _home_sanjai_SanjaiCoding_Odin_Project_HTML_Projects_restaurantPage_dist_FoodPics_KalaJamun_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dist/FoodPics/KalaJamun.jpg */ \"./dist/FoodPics/KalaJamun.jpg\");\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module '../dist/commonFunctions.js'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n\n\n\n\n\nfunction ShowMenuItem(Food,Image,Description){\n    let parentSeletor = document.getElementById('Body');\n    let FoodCard= document.createElement('div');\n    parentSeletor.appendChild(FoodCard);\n    FoodCard.id=`${Food}`;\n    FoodCard.className='FoodCard'\n    let foodName= document.createElement('h2');\n    let foodPic=document.createElement('img');\n    let foodDesc=document.createElement('p');\n    Object(function webpackMissingModule() { var e = new Error(\"Cannot find module '../dist/commonFunctions.js'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(FoodCard,[foodPic,foodName,foodDesc]);\n    foodName.innerText=`${Food}`;\n    foodPic.src=`${Image}`;\n    foodDesc.textContent=`${Description}`;\n}\nfunction menuBodyContent(){\n    let parentSeletor = document.getElementById('Body');\n    parentSeletor.innerHTML='';\n    let restaurantContent=document.createElement('p');\n    parentSeletor.appendChild(restaurantContent);\n    restaurantContent.textContent='Paneer Pasta';\n    ShowMenuItem('Biriyani',_home_sanjai_SanjaiCoding_Odin_Project_HTML_Projects_restaurantPage_dist_FoodPics_ChickenBiriyani_jpg__WEBPACK_IMPORTED_MODULE_0__,'Rich Indian Rice');\n    ShowMenuItem('ButterChicken',_home_sanjai_SanjaiCoding_Odin_Project_HTML_Projects_restaurantPage_dist_FoodPics_ButterChicken_jpg__WEBPACK_IMPORTED_MODULE_1__,'Rich Indian Chicken gravy with gracious ammount of Butter');\n    ShowMenuItem('Bread Basket',_home_sanjai_SanjaiCoding_Odin_Project_HTML_Projects_restaurantPage_dist_FoodPics_NaaNBasket_jpg__WEBPACK_IMPORTED_MODULE_2__,'An Array of indian Bread');\n    ShowMenuItem('Chai',_home_sanjai_SanjaiCoding_Odin_Project_HTML_Projects_restaurantPage_dist_FoodPics_Chai_jpg__WEBPACK_IMPORTED_MODULE_3__,'India\\'s Favorite drink');\n    ShowMenuItem('Tandoori Prawns',_home_sanjai_SanjaiCoding_Odin_Project_HTML_Projects_restaurantPage_dist_FoodPics_TandooriPrawns_jpg__WEBPACK_IMPORTED_MODULE_4__,'Grilled PRawns');\n    ShowMenuItem('Kala Jamun',_home_sanjai_SanjaiCoding_Odin_Project_HTML_Projects_restaurantPage_dist_FoodPics_KalaJamun_jpg__WEBPACK_IMPORTED_MODULE_5__,'Fried Sweet')\n\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuBodyContent);\n\n//# sourceURL=webpack://restaurantpage/./src/menuBodyContent.js?");
+
+/***/ }),
+
+/***/ "./dist/FoodPics/ButterChicken.jpg":
+/*!*****************************************!*\
+  !*** ./dist/FoodPics/ButterChicken.jpg ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f4893f692320ae2e71d4.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./dist/FoodPics/ButterChicken.jpg?");
+
+/***/ }),
+
+/***/ "./dist/FoodPics/Chai.jpg":
+/*!********************************!*\
+  !*** ./dist/FoodPics/Chai.jpg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"6581db5240cb83e49fae.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./dist/FoodPics/Chai.jpg?");
+
+/***/ }),
+
+/***/ "./dist/FoodPics/ChickenBiriyani.jpg":
+/*!*******************************************!*\
+  !*** ./dist/FoodPics/ChickenBiriyani.jpg ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"da221a50bb97502a2558.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./dist/FoodPics/ChickenBiriyani.jpg?");
+
+/***/ }),
+
+/***/ "./dist/FoodPics/KalaJamun.jpg":
+/*!*************************************!*\
+  !*** ./dist/FoodPics/KalaJamun.jpg ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"0090c489f5922968edb6.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./dist/FoodPics/KalaJamun.jpg?");
+
+/***/ }),
+
+/***/ "./dist/FoodPics/NaaNBasket.jpg":
+/*!**************************************!*\
+  !*** ./dist/FoodPics/NaaNBasket.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"1af54d08fadc243b2848.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./dist/FoodPics/NaaNBasket.jpg?");
+
+/***/ }),
+
+/***/ "./dist/FoodPics/TandooriPrawns.jpg":
+/*!******************************************!*\
+  !*** ./dist/FoodPics/TandooriPrawns.jpg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"218835cde8480f3a7220.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./dist/FoodPics/TandooriPrawns.jpg?");
 
 /***/ }),
 
@@ -177,66 +237,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"59177fa42bcd174eb0b3.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./src/ChefPic.jpg?");
-
-/***/ }),
-
-/***/ "./src/FoodPics/ButterChicken.jpg":
-/*!****************************************!*\
-  !*** ./src/FoodPics/ButterChicken.jpg ***!
-  \****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"f4893f692320ae2e71d4.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./src/FoodPics/ButterChicken.jpg?");
-
-/***/ }),
-
-/***/ "./src/FoodPics/Chai.jpg":
-/*!*******************************!*\
-  !*** ./src/FoodPics/Chai.jpg ***!
-  \*******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"6581db5240cb83e49fae.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./src/FoodPics/Chai.jpg?");
-
-/***/ }),
-
-/***/ "./src/FoodPics/ChickenBiriyani.jpg":
-/*!******************************************!*\
-  !*** ./src/FoodPics/ChickenBiriyani.jpg ***!
-  \******************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"da221a50bb97502a2558.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./src/FoodPics/ChickenBiriyani.jpg?");
-
-/***/ }),
-
-/***/ "./src/FoodPics/KalaJamun.jpg":
-/*!************************************!*\
-  !*** ./src/FoodPics/KalaJamun.jpg ***!
-  \************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"0090c489f5922968edb6.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./src/FoodPics/KalaJamun.jpg?");
-
-/***/ }),
-
-/***/ "./src/FoodPics/NaaNBasket.jpg":
-/*!*************************************!*\
-  !*** ./src/FoodPics/NaaNBasket.jpg ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"1af54d08fadc243b2848.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./src/FoodPics/NaaNBasket.jpg?");
-
-/***/ }),
-
-/***/ "./src/FoodPics/TandooriPrawns.jpg":
-/*!*****************************************!*\
-  !*** ./src/FoodPics/TandooriPrawns.jpg ***!
-  \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"218835cde8480f3a7220.jpg\";\n\n//# sourceURL=webpack://restaurantpage/./src/FoodPics/TandooriPrawns.jpg?");
 
 /***/ }),
 
