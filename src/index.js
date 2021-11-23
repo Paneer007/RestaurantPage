@@ -1,4 +1,7 @@
 import './style.css';
+import menuBodyContent from './menuBodyContent';
+import contactBodyContent from './contactBodyContent';
+import homeBodyContent from './homeBodyContent';
 //later import the image
 class ContentType{
     constructor(){
@@ -13,30 +16,6 @@ class ContentType{
             contactBodyContent()
         }
     }
-}
-
-function contactBodyContent(){
-    let parentSeletor = document.getElementById('Body');
-    parentSeletor.innerHTML='';
-    let parcel=document.createElement('p');
-    parentSeletor.appendChild(parcel);
-    parcel.textContent='+91xxxxxxxxxx'
-}
-
-function menuBodyContent(){
-    let parentSeletor = document.getElementById('Body');
-    parentSeletor.innerHTML='';
-    let restaurantContent=document.createElement('p');
-    parentSeletor.appendChild(restaurantContent);
-    restaurantContent.textContent='Paneer Pasta';
-}
-
-function homeBodyContent(){
-    let parentSeletor = document.getElementById('Body');
-    parentSeletor.innerHTML='';
-    let nameOfRestaurant=document.createElement('h1');
-    parentSeletor.appendChild(nameOfRestaurant);
-    nameOfRestaurant.textContent='Paneer Station';
 }
 
 function AMC(parent,Arr){

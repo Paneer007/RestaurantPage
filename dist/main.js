@@ -120,13 +120,43 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/contactBodyContent.js":
+/*!***********************************!*\
+  !*** ./src/contactBodyContent.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction contactBodyContent(){\n    let parentSeletor = document.getElementById('Body');\n    parentSeletor.innerHTML='';\n    let parcel=document.createElement('p');\n    parentSeletor.appendChild(parcel);\n    parcel.textContent='+91xxxxxxxxxx'\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contactBodyContent);\n\n//# sourceURL=webpack://restaurantpage/./src/contactBodyContent.js?");
+
+/***/ }),
+
+/***/ "./src/homeBodyContent.js":
+/*!********************************!*\
+  !*** ./src/homeBodyContent.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction homeBodyContent(){\n    let parentSeletor = document.getElementById('Body');\n    parentSeletor.innerHTML='';\n    let nameOfRestaurant=document.createElement('h1');\n    parentSeletor.appendChild(nameOfRestaurant);\n    nameOfRestaurant.textContent='Paneer Station';\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homeBodyContent);\n\n//# sourceURL=webpack://restaurantpage/./src/homeBodyContent.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n//later import the image\nclass ContentType{\n    constructor(){\n        this.number=0\n    }\n    checkToDisplay(){\n        if(this.number==0){\n            homeBodyContent()\n        }else if(this.number==1){\n            menuBodyContent()\n        }else if(this.number==2){\n            contactBodyContent()\n        }\n    }\n}\n\nfunction contactBodyContent(){\n    let parentSeletor = document.getElementById('Body');\n    parentSeletor.innerHTML='';\n    let parcel=document.createElement('p');\n    parentSeletor.appendChild(parcel);\n    parcel.textContent='+91xxxxxxxxxx'\n}\n\nfunction menuBodyContent(){\n    let parentSeletor = document.getElementById('Body');\n    parentSeletor.innerHTML='';\n    let restaurantContent=document.createElement('p');\n    parentSeletor.appendChild(restaurantContent);\n    restaurantContent.textContent='Paneer Pasta';\n}\n\nfunction homeBodyContent(){\n    let parentSeletor = document.getElementById('Body');\n    parentSeletor.innerHTML='';\n    let nameOfRestaurant=document.createElement('h1');\n    parentSeletor.appendChild(nameOfRestaurant);\n    nameOfRestaurant.textContent='Paneer Station';\n}\n\nfunction AMC(parent,Arr){\n    console.log(Arr);\n    for (let i=0;i<Arr.length;i++){\n        parent.appendChild(Arr[i])\n    }\n}\n\nfunction ClickToChangeContent(Arr){\n    for(let i=0;i<Arr.length;i++){\n        console.log('started')\n        Arr[i].addEventListener('click',()=>{\n            user.number=i;\n            user.checkToDisplay()\n            console.log('done')\n        });\n    }\n}\n\nfunction subsection(){\n    let parentSelector = document.getElementById('Subsections');\n    let Home= document.createElement('li');\n    let Menu = document.createElement('li');\n    let Contact = document.createElement('li');\n    AMC(parentSelector,[Home,Menu,Contact]);\n    Home.textContent=\"Home\";\n    Menu.textContent=\"Menu\";\n    Contact.textContent=\"Contact\"\n    ClickToChangeContent([Home,Menu,Contact])\n}\n\nfunction headerContent(){\n    let parentSelector = document.getElementById('Header');\n    let RestaurantName = document.createElement('h1');\n    let ListOfSub = document.createElement('ul');\n    AMC(parentSelector,[RestaurantName,ListOfSub])\n    RestaurantName.id='RestName';\n    ListOfSub.id='Subsections';\n    subsection();\n    RestaurantName.textContent='Pa/Sta';\n    user.checkToDisplay();\n}\n\nfunction creatingBaseTemplate(){\n    let bodyDiv =document.getElementById('content');\n    let headerDiv= document.createElement('div');\n    let contentDiv = document.createElement('div');\n    AMC(bodyDiv,[headerDiv,contentDiv])\n    headerDiv.id='Header';\n    headerDiv.className='Header';\n    contentDiv.id='Body';\n    contentDiv.className='Body'\n    headerContent()\n}\nlet user = new ContentType()\ncreatingBaseTemplate()\n\n\n//# sourceURL=webpack://restaurantpage/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _menuBodyContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menuBodyContent */ \"./src/menuBodyContent.js\");\n/* harmony import */ var _contactBodyContent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contactBodyContent */ \"./src/contactBodyContent.js\");\n/* harmony import */ var _homeBodyContent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./homeBodyContent */ \"./src/homeBodyContent.js\");\n\n\n\n\n//later import the image\nclass ContentType{\n    constructor(){\n        this.number=0\n    }\n    checkToDisplay(){\n        if(this.number==0){\n            (0,_homeBodyContent__WEBPACK_IMPORTED_MODULE_3__[\"default\"])()\n        }else if(this.number==1){\n            (0,_menuBodyContent__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()\n        }else if(this.number==2){\n            (0,_contactBodyContent__WEBPACK_IMPORTED_MODULE_2__[\"default\"])()\n        }\n    }\n}\n\nfunction AMC(parent,Arr){\n    console.log(Arr);\n    for (let i=0;i<Arr.length;i++){\n        parent.appendChild(Arr[i])\n    }\n}\n\nfunction ClickToChangeContent(Arr){\n    for(let i=0;i<Arr.length;i++){\n        console.log('started')\n        Arr[i].addEventListener('click',()=>{\n            user.number=i;\n            user.checkToDisplay()\n            console.log('done')\n        });\n    }\n}\n\nfunction subsection(){\n    let parentSelector = document.getElementById('Subsections');\n    let Home= document.createElement('li');\n    let Menu = document.createElement('li');\n    let Contact = document.createElement('li');\n    AMC(parentSelector,[Home,Menu,Contact]);\n    Home.textContent=\"Home\";\n    Menu.textContent=\"Menu\";\n    Contact.textContent=\"Contact\"\n    ClickToChangeContent([Home,Menu,Contact])\n}\n\nfunction headerContent(){\n    let parentSelector = document.getElementById('Header');\n    let RestaurantName = document.createElement('h1');\n    let ListOfSub = document.createElement('ul');\n    AMC(parentSelector,[RestaurantName,ListOfSub])\n    RestaurantName.id='RestName';\n    ListOfSub.id='Subsections';\n    subsection();\n    RestaurantName.textContent='Pa/Sta';\n    user.checkToDisplay();\n}\n\nfunction creatingBaseTemplate(){\n    let bodyDiv =document.getElementById('content');\n    let headerDiv= document.createElement('div');\n    let contentDiv = document.createElement('div');\n    AMC(bodyDiv,[headerDiv,contentDiv])\n    headerDiv.id='Header';\n    headerDiv.className='Header';\n    contentDiv.id='Body';\n    contentDiv.className='Body'\n    headerContent()\n}\nlet user = new ContentType()\ncreatingBaseTemplate()\n\n\n//# sourceURL=webpack://restaurantpage/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menuBodyContent.js":
+/*!********************************!*\
+  !*** ./src/menuBodyContent.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction menuBodyContent(){\n    let parentSeletor = document.getElementById('Body');\n    parentSeletor.innerHTML='';\n    let restaurantContent=document.createElement('p');\n    parentSeletor.appendChild(restaurantContent);\n    restaurantContent.textContent='Paneer Pasta';\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuBodyContent);\n\n//# sourceURL=webpack://restaurantpage/./src/menuBodyContent.js?");
 
 /***/ }),
 
