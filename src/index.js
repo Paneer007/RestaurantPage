@@ -56,7 +56,7 @@ function headerContent(){
     RestaurantName.id='RestName';
     ListOfSub.id='Subsections';
     subsection();
-    RestaurantName.textContent='Pa/Sta';
+    RestaurantName.textContent='Do/St';
     user.checkToDisplay();
 }
 
