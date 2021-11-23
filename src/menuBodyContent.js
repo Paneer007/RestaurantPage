@@ -29,7 +29,8 @@ function menuBodyContent(){
     ShowMenuItem('ButterChicken',Gravy,'Rich Indian Chicken gravy with gracious ammount of Butter');
     ShowMenuItem('Bread Basket',Bread,'An Array of indian Bread');
     ShowMenuItem('Chai',Drink,'India\'s Favorite drink');
-    ShowMenuItem('Tandoori Prawns',Starter,'Grilled PRawns')
+    ShowMenuItem('Tandoori Prawns',Starter,'Grilled PRawns');
+    ShowMenuItem('Kala Jamun',Desert,'Fried Sweet')
 
 };
 export default menuBodyContent;
