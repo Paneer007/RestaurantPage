@@ -2,6 +2,7 @@ import './style.css';
 import menuBodyContent from './menuBodyContent';
 import contactBodyContent from './contactBodyContent';
 import homeBodyContent from './homeBodyContent';
+import AMC from './commonFunctions';
 //later import the image
 class ContentType{
     constructor(){
@@ -15,13 +16,6 @@ class ContentType{
         }else if(this.number==2){
             contactBodyContent()
         }
-    }
-}
-
-function AMC(parent,Arr){
-    console.log(Arr);
-    for (let i=0;i<Arr.length;i++){
-        parent.appendChild(Arr[i])
     }
 }
 
@@ -56,7 +50,7 @@ function headerContent(){
     RestaurantName.id='RestName';
     ListOfSub.id='Subsections';
     subsection();
-    RestaurantName.textContent='Do/St';
+    RestaurantName.textContent='De/Sta';
     user.checkToDisplay();
 }
 
@@ -73,3 +67,5 @@ function creatingBaseTemplate(){
 }
 let user = new ContentType()
 creatingBaseTemplate()
+
+export default AMC

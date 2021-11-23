@@ -1,8 +1,7 @@
 body{
     background-image: url("./RestaurantBG.jpg");
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     color:white;
 }
 ul{
