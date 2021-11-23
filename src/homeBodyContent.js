@@ -9,9 +9,14 @@ function RestName(){
 function RestAbout(){
     let parentSelector=document.getElementById('RestAbout');
     let aboutRestaurant1=document.createElement('p');
-    let aboutRestaurant2=document.createElement('p');
+    let aboutRestaurant2=document.createElement('img');
     let aboutRestaurant3=document.createElement('p');
-    AMC(parentSelector,[aboutRestaurant1,aboutRestaurant2,aboutRestaurant3])
+    AMC(parentSelector,[aboutRestaurant1,aboutRestaurant2,aboutRestaurant3]);
+    aboutRestaurant1.id('Intro');
+    aboutRestaurant2.id('ChefPic');
+    aboutRestaurant3.id('Founder');
+    aboutRestaurant2.src=url('./ChefPic.jpg')
+
 }
 function homeBodyContent(){
     let parentSeletor = document.getElementById('Body');
