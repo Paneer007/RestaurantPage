@@ -4,5 +4,6 @@ function menuBodyContent(){
     let restaurantContent=document.createElement('p');
     parentSeletor.appendChild(restaurantContent);
     restaurantContent.textContent='Paneer Pasta';
+    
 };
 export default menuBodyContent;

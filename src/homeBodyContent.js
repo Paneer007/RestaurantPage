@@ -1,7 +1,7 @@
 function RestName(){
-    let parentSelector=document.getElementById('RestName');
+    let parentSelector=document.getElementById('RestNameAbout');
     let RestaurantName=document.createElement('h1');
-    parentSelector.appendChild(RestName);
+    parentSelector.appendChild(RestaurantName);
     RestaurantName.textContent='Dosa Station'
 }
 function homeBodyContent(){
@@ -11,9 +11,9 @@ function homeBodyContent(){
     parentSeletor.appendChild(nameOfRestaurant);
     let aboutRestaurant=document.createElement('div');
     parentSeletor.appendChild(aboutRestaurant);
-    nameOfRestaurant.id='RestName';
+    nameOfRestaurant.id='RestNameAbout';
     aboutRestaurant.id='RestAbout';
     RestName();
-    RestAbout()
+    //RestAbout()
 }
 export default homeBodyContent;
