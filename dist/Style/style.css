@@ -1,8 +1,9 @@
 body{
-    background-image: url("../GeneralPics/RestaurantBG.jpg");
+    background-image: url("../GeneralPics/BG.jpg");
     background-size: cover;
     background-attachment: fixed;
-    color:rgb(128, 109, 109);
+    color:rgb(245, 226, 166);
+    margin:0px;
 }
 
 #ChefPic{
@@ -12,12 +13,40 @@ body{
 ul{
   list-style: none;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 li{
     margin: 8px;
+    text-align: center;
 }
 .Header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: rgba(0,0,0,0.7);
+    padding: 8px;
+    font-size: large;
+}
+.FoodCard{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+.foodPic{
+    height:200px;
+    width: 200px;
+}
+.MenuCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.HomePage,.Contact,.MenuCard{
+    padding: 8px;
 }

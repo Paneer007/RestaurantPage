@@ -11,19 +11,20 @@ function ShowMenuItem(Food,Image,Description){
     AMC(FoodCard,[foodPic,foodName,foodDesc]);
     foodName.innerText=`${Food}`;
     foodPic.src=`../dist/FoodPics/${Image}.jpg`;
+    foodPic.className='foodPic';
     foodDesc.textContent=`${Description}`;
 }
 function menuBodyContent(){
     let parentSeletor = document.getElementById('Body');
     parentSeletor.innerHTML='';
+    parentSeletor.className='MenuCard';
     let restaurantContent=document.createElement('p');
     parentSeletor.appendChild(restaurantContent);
-    restaurantContent.textContent='Paneer Pasta';
     ShowMenuItem('Chicken Biriyani','ChickenBiriyani','Rich Indian Rice');
     ShowMenuItem('Butter Chicken','ButterChicken','Rich Indian Chicken gravy with gracious ammount of Butter');
     ShowMenuItem('Bread Basket','NaaNBasket','An Array of indian Bread');
     ShowMenuItem('Chai','Chai','India\'s Favorite drink');
-    ShowMenuItem('Tandoori Prawns','TandooriPrawns','Grilled PRawns');
+    ShowMenuItem('Tandoori Prawns','TandooriPrawns','Grilled Prawns');
     ShowMenuItem('Kala Jamun','KalaJamun','Fried Sweet')
 
 };

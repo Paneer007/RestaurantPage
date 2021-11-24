@@ -24,7 +24,6 @@ function ClickToChangeContent(Arr){
         Arr[i].addEventListener('click',()=>{
             user.number=i;
             user.checkToDisplay()
-            console.log('done')
         });
     }
 }

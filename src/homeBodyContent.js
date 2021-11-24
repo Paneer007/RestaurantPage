@@ -22,6 +22,7 @@ function RestAbout(){
 function homeBodyContent(){
     let parentSeletor = document.getElementById('Body');
     parentSeletor.innerHTML='';
+    parentSeletor.className='HomePage'
     let nameOfRestaurant=document.createElement('div');
     parentSeletor.appendChild(nameOfRestaurant);
     let aboutRestaurant=document.createElement('div');
