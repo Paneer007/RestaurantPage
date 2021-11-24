@@ -1,0 +1,23 @@
+body{
+    background-image: url("./RestaurantBG.jpg");
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    color:white;
+}
+
+#ChefPic{
+    height:450px;
+    width:300px;
+}
+ul{
+  list-style: none;
+  display: flex;
+}
+li{
+    margin: 8px;
+}
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
