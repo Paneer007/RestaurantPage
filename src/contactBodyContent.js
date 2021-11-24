@@ -3,7 +3,6 @@ function contactBodyContent(){
     parentSeletor.innerHTML='';
     let parcel=document.createElement('p');
     parentSeletor.appendChild(parcel);
-    parcel.textContent='+91xxxxxxxxxx'
+    parcel.textContent='+91xxxxxxxxxx';
 }
-
 export default contactBodyContent;

@@ -1,4 +1,3 @@
-import './style.css';
 import menuBodyContent from './menuBodyContent';
 import contactBodyContent from './contactBodyContent';
 import homeBodyContent from './homeBodyContent';
