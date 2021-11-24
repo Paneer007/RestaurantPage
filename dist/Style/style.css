@@ -1,5 +1,5 @@
 body{
-    background-image: url("./RestaurantBG.jpg");
+    background-image: url("dist/GeneralPics/RestaurantBackGround.jpg");
     background-size: cover;
     /*background-attachment: fixed;*/
     color:white;

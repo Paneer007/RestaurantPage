@@ -1,5 +1,4 @@
 import AMC from './commonFunctions.js';
-import ChefPic from './ChefPic.jpg';
 
 function RestName(){
     let parentSelector=document.getElementById('RestNameAbout');
@@ -16,7 +15,7 @@ function RestAbout(){
     aboutRestaurant1.id='Intro'
     aboutRestaurant2.id='ChefPic';
     aboutRestaurant3.id='Founder';
-    aboutRestaurant2.src=ChefPic;
+    aboutRestaurant2.src='/home/sanjai/SanjaiCoding/Odin Project/HTML-Projects/restaurantPage/dist/GeneralPics/ChefPic.jpg';
     aboutRestaurant1.textContent='Founded in 2021 at a lil corner in Brooklyn,New York, Desi Station (or De/Sta) is a restaurant to bring out the authentic flavors of india cusine'
     aboutRestaurant3.textContent='Hardik Singh, the founde of De/Sta, started this venture to satisfying people\'s craving for good and authentic desi cuisine'
 }
