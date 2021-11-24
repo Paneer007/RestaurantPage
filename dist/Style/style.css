@@ -1,8 +1,8 @@
 body{
-    background-image: url("dist/GeneralPics/RestaurantBackGround.jpg");
+    background-image: url("../dist/GeneralPics/RestauratBG.jpg");
     background-size: cover;
-    /*background-attachment: fixed;*/
-    color:white;
+    background-attachment: fixed;
+    color:rgb(128, 109, 109);
 }
 
 #ChefPic{

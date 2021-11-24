@@ -10,7 +10,7 @@ function ShowMenuItem(Food,Image,Description){
     let foodDesc=document.createElement('p');
     AMC(FoodCard,[foodPic,foodName,foodDesc]);
     foodName.innerText=`${Food}`;
-    foodPic.src=`dist/FoodPics/${Image}.jpg`;
+    foodPic.src=`../dist/FoodPics/${Image}.jpg`;
     foodDesc.textContent=`${Description}`;
 }
 function menuBodyContent(){
