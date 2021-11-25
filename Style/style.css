@@ -29,12 +29,16 @@ li{
     font-size: large;
 }
 .FoodCard{
-    height: 500px;
-    width: 500px;
+    background-color: rgba(0, 0, 0, 0.623);
+    height: 400px;
+    width: 400px;
     display: flex;
+    flex-basis: 33%;
     flex-direction: column;
     justify-content:center ;
     align-items: center;
+    margin: 8px;
+    border-radius: 8px;
 }
 .foodPic{
     height:200px;
