@@ -18,8 +18,6 @@ function menuBodyContent(){
     let parentSeletor = document.getElementById('Body');
     parentSeletor.innerHTML='';
     parentSeletor.className='MenuCard';
-    let restaurantContent=document.createElement('p');
-    parentSeletor.appendChild(restaurantContent);
     ShowMenuItem('Chicken Biriyani','ChickenBiriyani','Rich Indian Rice');
     ShowMenuItem('Butter Chicken','ButterChicken','Rich Indian Chicken gravy with gracious ammount of Butter');
     ShowMenuItem('Bread Basket','NaaNBasket','An Array of indian Bread');

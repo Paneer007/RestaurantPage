@@ -1,4 +1,5 @@
 function AddStuff(iden,content){
+    let parentSeletor = document.getElementById('Body');
     let Container=document.createElement('p');
     parentSeletor.appendChild(Container);
     Container.innerText=content;
@@ -11,7 +12,7 @@ function contactBodyContent(){
     AddStuff('phoneNumber','Phone Number: +1 xxxxxxxxxxx');
     AddStuff('email','Email Address: desta@gmail.com');
     AddStuff('location','Location: 3180 Henry Ford Avenue , Brooklyn, New York');
-    
+
 
 }
 export default contactBodyContent;
