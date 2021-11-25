@@ -39,6 +39,7 @@ li{
     align-items: center;
     margin: 8px;
     border-radius: 8px;
+    text-align: center;
 }
 .foodPic{
     height:200px;
@@ -53,4 +54,63 @@ li{
 }
 .HomePage,.Contact,.MenuCard{
     padding: 8px;
+}
+.Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    color: wheat;
+}
+.ContactHolder{
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 8px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    font-size: large;
+}
+.HomePage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.623);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: large;
+}
+.Header{
+    font-family: Roboto;
+}
+#Subsections{
+    font-family: MontSerrat;
+}
+#RestNameAbout{
+    font-family: MontSerrat Alternates;
+}
+#RestAbout{
+    font-family: MontSerrat;
+}
+.FoodCard h2{
+    font-family: MontSerrat Alternates;
+}
+.FoodCard p{
+    font-family: MontSerrat;
+}
+.Contact{
+    font-family: MontSerrat;
 }

@@ -21,9 +21,9 @@ function menuBodyContent(){
     ShowMenuItem('Chicken Biriyani','ChickenBiriyani','Rich Indian Rice');
     ShowMenuItem('Butter Chicken','ButterChicken','Rich Indian Chicken gravy with gracious ammount of Butter');
     ShowMenuItem('Bread Basket','NaaNBasket','An Array of indian Bread');
-    ShowMenuItem('Chai','Chai','India\'s Favorite drink');
-    ShowMenuItem('Tandoori Prawns','TandooriPrawns','Grilled Prawns');
-    ShowMenuItem('Kala Jamun','KalaJamun','Fried Sweet')
+    ShowMenuItem('Chai','Chai','India\'s Favorite drink.');
+    ShowMenuItem('Tandoori Prawns','TandooriPrawns','Grilled Prawns cooked in indian spices');
+    ShowMenuItem('Kala Jamun','KalaJamun','Fried Milk Based Sweet soaked in light sugar syrup with rose essence')
 
 };
 export default menuBodyContent;

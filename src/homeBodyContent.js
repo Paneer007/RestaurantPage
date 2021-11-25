@@ -23,10 +23,14 @@ function homeBodyContent(){
     let parentSeletor = document.getElementById('Body');
     parentSeletor.innerHTML='';
     parentSeletor.className='HomePage'
+    let ContainerDiv = document.createElement('div');
+    parentSeletor.appendChild(ContainerDiv);
+    ContainerDiv.className='Contents';
+    ContainerDiv.id='Contents';
     let nameOfRestaurant=document.createElement('div');
-    parentSeletor.appendChild(nameOfRestaurant);
+    ContainerDiv.appendChild(nameOfRestaurant);
     let aboutRestaurant=document.createElement('div');
-    parentSeletor.appendChild(aboutRestaurant);
+    ContainerDiv.appendChild(aboutRestaurant);
     nameOfRestaurant.id='RestNameAbout';
     aboutRestaurant.id='RestAbout';
     RestName();
